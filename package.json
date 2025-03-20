@@ -1,0 +1,13 @@
+{
+  "name": "str18ng-loader",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "str18ng",
+  "type": "commonjs",
+  "main": "cli.js",
+  "scripts": {
+    "str18ng": "node cli.js",
+    "str18ng:download": "node cli.js --format json --output ./lang"
+  }
+}
