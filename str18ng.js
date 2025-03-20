@@ -17,14 +17,15 @@ const unzipFile = (zipFilePath, outputDir) => {
 }
 
 
-const downloadAndUnpack = async ({ format, output }) => {
+const downloadAndUnpack = async ({ format, output, token }) => {
+
     try {
         fs.mkdirSync(output, { recursive: true })
         const response = await fetch('https://str18ng.com/api/export', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                accessToken: process.env.STR18NG_ACCESS_TOKEN,
+                accessToken: token ?? process.env.STR18NG_ACCESS_TOKEN,
                 format
             })
         })
