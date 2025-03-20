@@ -4,6 +4,8 @@
   "description": "",
   "license": "ISC",
   "author": "str18ng",
-  "type": "commonjs"
-
+  "type": "commonjs",
+  "scripts": {
+    "str18ng": "node cli.js"
+  }
 }
