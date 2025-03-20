@@ -5,6 +5,9 @@
   "license": "ISC",
   "author": "str18ng",
   "type": "commonjs",
+  "bin": {
+    "str18ng": "./cli.js"
+  },
   "scripts": {
     "str18ng": "node cli.js"
   }
