@@ -5,7 +5,7 @@ The Str18ng Loader package provides access to your string translations from your
 Install the package with your manager of choice
 
 ```sh
-npm install str18ng/str18ng-loader
+npm install str18ng-loader
 ```
 
 ## Usage
