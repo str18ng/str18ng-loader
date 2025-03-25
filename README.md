@@ -47,9 +47,9 @@ npm run str18ng:download
 
 | Option   | Default | Description                                                                                                                                                                                                                                      |
 |----------|---------| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `format` | `json`  | `json` `csv` `arb` The format of your files 
-| `output` | `./`    | The path of the directory you want the files downloaded to
-| `token`  | `null`  | (Optional) The access key from your Str18ng account
+| `format` | `json`  | `json` `csv` `arb` The format of your files |
+| `output` | `./`    | The path of the directory you want the files downloaded to|
+| `token`  | `null`  | (Optional) The access key from your Str18ng account|
 
 
 [str18ng]: https://str18ng.com
