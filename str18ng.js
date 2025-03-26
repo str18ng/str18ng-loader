@@ -1,7 +1,19 @@
-require('dotenv').config();
+const dotenv = require('dotenv');
 const fs = require('fs')
 const { exec } = require('child_process')
 const path = require('path')
+
+const NODE_ENV = process.env.NODE_ENV || 'development';
+dotenv.config({ path: path.resolve(process.cwd(), '.env.local') });
+
+if (NODE_ENV === 'development') {
+    dotenv.config({ path: path.resolve(process.cwd(), '.env.development') });
+} else if (NODE_ENV === 'production') {
+    dotenv.config({ path: path.resolve(process.cwd(), '.env.production') });
+}
+
+// Load the default `.env` file (as a fallback)
+dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 
 const unzipFile = (zipFilePath, outputDir) => {
     fs.mkdirSync(outputDir, { recursive: true })
